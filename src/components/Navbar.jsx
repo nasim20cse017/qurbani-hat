@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Navlink from './Navlink';
 
+import logo from '@/assets/cow.png'
+
 const Navbar = () => {
 
 
@@ -17,7 +19,7 @@ const Navbar = () => {
     return (
         <div className='bg-gray-200 py-5'>
             <div className='flex justify-between items-center container mx-auto'>
-                <Link href="./"><h1 className="text-2xl md:text-3xl font-semibold tracking-tight">
+                <Link className='flex items-center' href="./"><Image src={logo} width={50} height={50} alt="Logo"></Image><h1 className="text-2xl md:text-3xl font-semibold tracking-tight">
                     <span className="font-bold">Qurbani</span>
                     <span className="font-light ml-1">Hat</span>
                 </h1></Link>
