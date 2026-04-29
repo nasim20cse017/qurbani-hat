@@ -23,7 +23,7 @@ const Navbar = () => {
                 </h1></Link>
                 <ul className='flex gap-4 justify-center items-center text-2xl text-gray-700'>
                     <li className='font-bold'><Navlink href="/">Home</Navlink></li>
-                    <li className='font-bold'><Navlink href="/about">All Animals</Navlink></li>
+                    <li className='font-bold'><Navlink href="/all-animals">All Animals</Navlink></li>
                 </ul>
 
                 <div className='flex gap-4'> 
