@@ -1,3 +1,4 @@
+import FeaturedAnimals from "@/components/FeaturedAnimals";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <div>
       <HeroSection></HeroSection>
+      <FeaturedAnimals></FeaturedAnimals>
       <WhyChooseUs></WhyChooseUs>
     </div>
   );
