@@ -1,6 +1,6 @@
 'use client'
 
-// import { authClient } from '@/lib/auth-client';
+import { authClient } from '@/lib/auth-client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
@@ -19,7 +19,7 @@ const RegisterPage = () => {
             email: email, // required
             password: password, // required
             image: photoURL,
-            callbackURL: "/", 
+            callbackURL: "/login", 
         });
 
         console.log("Data and Response", response, error)
