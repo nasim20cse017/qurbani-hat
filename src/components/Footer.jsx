@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="ml-20">
+          <div className="ml-0 md:ml-20">
             <h3 className="text-lg font-semibold mb-3">
               Contact Info
             </h3>
