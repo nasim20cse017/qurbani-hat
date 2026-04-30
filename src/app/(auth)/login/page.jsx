@@ -16,10 +16,12 @@ const LoginPage = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
 
+
     const [showPassword, setShowPassword] = useState(false);
     const [loading, setLoading] = useState(false);
 
     const handleGoogle = async () => {
+
         try {
             await authClient.signIn.social({ provider: "google" });
         } catch (error) {
