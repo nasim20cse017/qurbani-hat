@@ -11,7 +11,7 @@ const Navlink = ({href, children}) => {
 
     // console.log('pathname', pathname);
     return (
-        <Link href={href} className={`${isActive ? "border-b-3 border-b-purple-500" : ""}`}>
+        <Link href={href} className={`${isActive ? "border-b-3 border-b-green-500 text-green-500" : ""}`}>
             {children}
         </Link>
     );
