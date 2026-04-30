@@ -3,55 +3,59 @@
 import { authClient } from '@/lib/auth-client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const RegisterPage = () => {
-    // Destructure everything needed
+
+    const router = useRouter();
+
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const handleRegister = async (data) => {
 
-        const {name, email, photoURL, password} = data;
-        // This ONLY runs if validation passes
-        // console.log('✅ Form Submitted Successfully:', data);
+        const { name, email, photoURL, password } = data;
 
         const { data: response, error } = await authClient.signUp.email({
-            name: name, // required
-            email: email, // required
-            password: password, // required
+            name,
+            email,
+            password,
             image: photoURL,
-            callbackURL: "/login", 
+            callbackURL: "/login",
         });
 
-        console.log("Data and Response", response, error)
+        console.log("Data and Response", response, error);
 
-        if(error) {
-            alert('error.message')
+        if (error) {
+            toast.error(error.message || "Something went wrong!");
+            return;
         }
 
-        if(response) {
-            alert('Sign Up Successful')
+        if (response) {
+            toast.success("Sign Up Successful 🎉");
+
+            // redirect after short delay so user can see toast
+            setTimeout(() => {
+                router.push('/login');
+            }, 1500);
         }
-
-    };
-
-    const onError = (errors) => {
-        // This runs if there are validation errors
-        console.log('❌ Validation Errors:', errors);
     };
 
     return (
-        <div className=" flex items-center justify-center bg-[#F3F3F3] font-sans py-10">
+        <div className="flex items-center justify-center bg-[#F3F3F3] font-sans py-10">
             <div className="bg-white p-10 md:p-16 rounded-sm w-full max-w-2xl shadow-sm my-5">
+
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-[#403F3F] mb-10">
                     Register your account
                 </h2>
 
                 <div className="border-t border-[#E7E7E7] mb-10"></div>
 
-                {/* Pass handleRegister and onError to handleSubmit */}
                 <form onSubmit={handleSubmit(handleRegister)}>
 
-                    {/* Name Field */}
+                    {/* Name */}
                     <div className="form-control w-full mb-6">
                         <label className="label p-0 mb-3">
                             <span className="label-text text-xl font-semibold text-[#403F3F]">Your Name</span>
@@ -60,12 +64,12 @@ const RegisterPage = () => {
                             {...register("name", { required: "Name is required" })}
                             type="text"
                             placeholder="Enter your name"
-                            className="input w-full bg-[#F3F3F3] border-none rounded-sm h-16 px-5 focus:outline-none"
+                            className="input w-full bg-[#F3F3F3] border-none rounded-sm h-16 px-5"
                         />
                         {errors.name && <p className="text-red-500 text-sm mt-2">{errors.name.message}</p>}
                     </div>
 
-                    {/* Photo URL Field */}
+                    {/* Photo URL */}
                     <div className="form-control w-full mb-6">
                         <label className="label p-0 mb-3">
                             <span className="label-text text-xl font-semibold text-[#403F3F]">Photo URL</span>
@@ -74,12 +78,12 @@ const RegisterPage = () => {
                             {...register("photoURL", { required: "Photo URL is required" })}
                             type="text"
                             placeholder="Enter your photo URL"
-                            className="input w-full bg-[#F3F3F3] border-none rounded-sm h-16 px-5 focus:outline-none"
+                            className="input w-full bg-[#F3F3F3] border-none rounded-sm h-16 px-5"
                         />
                         {errors.photoURL && <p className="text-red-500 text-sm mt-2">{errors.photoURL.message}</p>}
                     </div>
 
-                    {/* Email Field */}
+                    {/* Email */}
                     <div className="form-control w-full mb-6">
                         <label className="label p-0 mb-3">
                             <span className="label-text text-xl font-semibold text-[#403F3F]">Email</span>
@@ -87,13 +91,13 @@ const RegisterPage = () => {
                         <input
                             {...register("email", { required: "Email is required" })}
                             type="email"
-                            placeholder="Enter your email address"
-                            className="input w-full bg-[#F3F3F3] border-none rounded-md h-16 px-5 focus:outline-none"
+                            placeholder="Enter your email"
+                            className="input w-full bg-[#F3F3F3] border-none rounded-md h-16 px-5"
                         />
                         {errors.email && <p className="text-red-500 text-sm mt-2">{errors.email.message}</p>}
                     </div>
 
-                    {/* Password Field */}
+                    {/* Password */}
                     <div className="form-control w-full mb-6">
                         <label className="label p-0 mb-3">
                             <span className="label-text text-xl font-semibold text-[#403F3F]">Password</span>
@@ -105,34 +109,30 @@ const RegisterPage = () => {
                             })}
                             type="password"
                             placeholder="Enter your password"
-                            className="input w-full bg-[#F3F3F3] border-none rounded-md h-16 px-5 focus:outline-none"
+                            className="input w-full bg-[#F3F3F3] border-none rounded-md h-16 px-5"
                         />
                         {errors.password && <p className="text-red-500 text-sm mt-2">{errors.password.message}</p>}
                     </div>
 
-                    {/* Terms Checkbox */}
-                    {/* <div className="flex flex-col mb-8">
-                        <div className="flex items-center gap-3 cursor-pointer">
-                            <input
-                                {...register("terms", { required: "You must accept terms" })}
-                                type="checkbox"
-                                id="terms"
-                                className="checkbox checkbox-sm rounded-none border-[#403F3F]"
-                            />
-                            <label htmlFor="terms" className="label-text text-[#706F6F] font-medium cursor-pointer">
-                                Accept <span className="font-bold">Term & Conditions</span>
-                            </label>
-                        </div>
-                        {errors.terms && <p className="text-red-500 text-sm mt-2">{errors.terms.message}</p>}
-                    </div> */}
+                    <div className="flex justify-end items-center mb-8">
+                        <span className="text-sm">
+                           Already have and account?{" "}
+                            <Link href="/login" className="text-blue-600 hover:underline">
+                                Login
+                            </Link>
+                        </span>
+                    </div>
 
                     <div className="form-control">
-                        <button type="submit" className="btn btn-block bg-green-400 hover:bg-blue-400 text-white border-none rounded-md h-14 text-lg normal-case">
+                        <button type="submit" className="btn btn-block bg-green-400 hover:bg-blue-400 text-white border-none rounded-md h-14 text-lg">
                             Register
                         </button>
                     </div>
                 </form>
             </div>
+
+            {/* Toast Container */}
+            <ToastContainer position="top-right" autoClose={2000} />
         </div>
     );
 };
