@@ -28,10 +28,7 @@ export default function HeroSection() {
             <div className="flex justify-center lg:justify-start">
               <Link href='/all-animals'><Button
                 href="/animals"
-                color="success"
-                size="lg"
-                radius="full"
-                className=" px-6 sm:px-8 py-3 text-sm sm:text-base font-bold shadow-md hover:scale-105 transition-transform"
+                className=" btn bg-green-400 text-white rounded-4xl px-6 sm:px-8 py-3 text-sm sm:text-base font-bold shadow-md hover:scale-110 hover:bg-blue-400 transition-transform"
               >
                 Browse Animals
               </Button></Link>

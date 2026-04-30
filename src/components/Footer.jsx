@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="ml-20">
             <h3 className="text-lg font-semibold mb-3">
               Contact Info
             </h3>
@@ -32,7 +32,7 @@ export default function Footer() {
           </div>
 
           {/* Social Links */}
-          <div>
+          <div >
             <h3 className="text-lg font-semibold mb-3">
               Follow Us
             </h3>
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-10 border-t border-gray-700 pt-5 text-center text-xs text-gray-500">
+        <div className="mt-10 border-t border-gray-700 pt-5 text-center text-md text-gray-100">
           © {new Date().getFullYear()} QurbaniHat. All rights reserved.
         </div>
       </div>
