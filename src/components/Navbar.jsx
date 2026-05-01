@@ -15,8 +15,11 @@ import {
     FiGrid,
     FiLogOut,
     FiLogIn,
-    FiUserPlus
+    FiUserPlus,
+    FiUser
 } from "react-icons/fi";
+import { FaUserCircle } from 'react-icons/fa';
+import { HiOutlineUserCircle } from 'react-icons/hi';
 
 const Navbar = () => {
 
@@ -79,6 +82,11 @@ const Navbar = () => {
                                 />
                             </div>
 
+                            <Link href="/my-profile"><button
+                                className="btn btn-sm bg-green-500 text-white hover:bg-blue-500 flex items-center gap-1"
+                            >
+                               <FiUser className="text-xl" /> My Profile
+                            </button></Link>
                             <button
                                 onClick={handleLogout}
                                 className="btn btn-sm bg-red-500 text-white hover:bg-red-600 flex items-center gap-1"
