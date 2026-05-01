@@ -9,7 +9,7 @@
     "age": 3,
     "location": "Bogura",
     "description": "Healthy cow",
-    "image": "https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg",
+    "image": "https://i.ibb.co.com/NgdZbsq9/Local-Cow.avif",
     "category": "Large Animal"
   },
   {
@@ -22,7 +22,7 @@
     "age": 4,
     "location": "Sirajganj",
     "description": "Premium cow",
-    "image": "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg",
+    "image": "https://i.ibb.co.com/67ng3YHM/Sahiwal-Cow.jpg",
     "category": "Large Animal"
   },
   {
@@ -35,7 +35,7 @@
     "age": 2,
     "location": "Rajshahi",
     "description": "Popular goat",
-    "image": "https://images.pexels.com/photos/144240/pexels-photo-144240.jpeg",
+    "image": "https://i.ibb.co.com/Zz0fHG3F/black-bengal-goats.jpg",
     "category": "Small Animal"
   },
   {
@@ -48,7 +48,7 @@
     "age": 2.5,
     "location": "Pabna",
     "description": "Large goat",
-    "image": "https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg",
+    "image": "https://i.ibb.co.com/wZ0KZtcK/Jaman-Puri-g-OAT.webp",
     "category": "Small Animal"
   },
   {
@@ -61,7 +61,7 @@
     "age": 2,
     "location": "Rangpur",
     "description": "Healthy sheep",
-    "image": "https://images.pexels.com/photos/248337/pexels-photo-248337.jpeg",
+    "image": "https://i.ibb.co.com/m5sLcSxR/white-sheep.jpg",
     "category": "Small Animal"
   },
   {
@@ -74,7 +74,7 @@
     "age": 5,
     "location": "Dhaka",
     "description": "Large camel",
-    "image": "https://images.pexels.com/photos/208821/pexels-photo-208821.jpeg",
+    "image": "https://i.ibb.co.com/XfLN5KKc/Camel-Large.jpg",
     "category": "Large Animal"
   },
   {
@@ -87,7 +87,7 @@
     "age": 4,
     "location": "Chattogram",
     "description": "Strong cow",
-    "image": "https://images.pexels.com/photos/162240/pexels-photo-162240.jpeg",
+    "image": "https://i.ibb.co.com/rK7CDWBg/Red-Cow.jpg",
     "category": "Large Animal"
   },
   {
@@ -100,7 +100,7 @@
     "age": 3,
     "location": "Rangpur",
     "description": "Fast-growing goat",
-    "image": "https://images.pexels.com/photos/229611/pexels-photo-229611.jpeg",
+    "image": "https://i.ibb.co.com/DPyPVwfs/Boer-Goat.jpg",
     "category": "Small Animal"
   },
   {
@@ -126,7 +126,7 @@
     "age": 4,
     "location": "Dhaka",
     "description": "Strong camel",
-    "image": "https://images.pexels.com/photos/1212693/pexels-photo-1212693.jpeg",
+    "image": "https://i.ibb.co.com/0VF3T9Lh/Desert-Camel.jpg",
     "category": "Large Animal"
   },
   {
@@ -139,7 +139,7 @@
     "age": 3,
     "location": "Dhaka",
     "description": "High quality cow",
-    "image": "https://images.pexels.com/photos/159558/pexels-photo-159558.jpeg",
+    "image": "https://i.ibb.co.com/4RXFVLRz/Holstein-cow.webp",
     "category": "Large Animal"
   },
   {
@@ -152,7 +152,7 @@
     "age": 2,
     "location": "Kushtia",
     "description": "Village goat",
-    "image": "https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg",
+    "image": "https://i.ibb.co.com/0Vprrbvq/Village-Goat.jpg",
     "category": "Small Animal"
   },
   {
@@ -373,7 +373,7 @@
     "age": 2,
     "location": "Tangail",
     "description": "Brown sheep",
-    "image": "https://images.pexels.com/photos/771079/pexels-photo-771079.jpeg",
+    "image": "https://i.ibb.co.com/mCV8K4w7/Brown-Sheep.jpg",
     "category": "Small Animal"
   },
   {
