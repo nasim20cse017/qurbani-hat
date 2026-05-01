@@ -10,8 +10,8 @@ export default function AnimalCard({ animal }) {
 
   return (
     <div
-      onClick={() => router.push(`/animals/${animal.id}`)}
-      className="card bg-base-100 shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer group border border-base-200"
+      onClick={() => router.push(`/all-animals/${animal.id}`)}
+      className="card bg-base-100 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer group border border-base-200"
     >
 
       {/* IMAGE */}
