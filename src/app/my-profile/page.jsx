@@ -1,8 +1,7 @@
 "use client";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { useSession } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
+import { FaUser } from "react-icons/fa";
 
 export default function MyProfilePage() {
   const { data: session, isPending } = useSession();
@@ -11,37 +10,55 @@ export default function MyProfilePage() {
   if (isPending)
     return <div className="text-center py-20">Loading...</div>;
 
-  if (!session) return null; // middleware protects
+  if (!session) return null;
 
   const user = session.user;
 
   return (
-    <>
+    <div className=" my-50 flex items-center justify-center  px-4">
 
-      <div className="max-w-lg mx-auto px-4 py-20 text-center">
+      <div className="backdrop-blur-lg bg-white/60 border border-white/40 shadow-xl rounded-3xl w-full max-w-md p-8 text-center">
+
         {/* Avatar */}
-        <div className="avatar">
-          <div className="w-32 rounded-full mx-auto">
-            <img
-              src={user.image || "/default-avatar.png"}
-              alt={user.name}
-            />
+        <div className="flex justify-center mb-4">
+          <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white shadow-md">
+            {user.image ? (
+              <img src={user.image} alt={user.name} className="w-full h-full object-cover" />
+            ) : (
+              <div className="flex items-center justify-center w-full h-full bg-gray-200">
+                <FaUser className="text-4xl text-gray-500" />
+              </div>
+            )}
           </div>
         </div>
 
-        {/* User Info */}
-        <h1 className="text-2xl font-bold mt-4">{user.name}</h1>
-        <p className="text-gray-600">{user.email}</p>
+        {/* Name */}
+        <h2 className="text-2xl font-semibold text-gray-800">{user.name}</h2>
+
+        {/* Email */}
+        <p className="text-gray-500 text-sm mt-1">{user.email}</p>
+
+        {/* Info Section */}
+        <div className="mt-6 space-y-2 text-left">
+          <div className="flex justify-between text-sm">
+            <span className="text-gray-500">Status</span>
+            <span className="font-medium text-green-600">Active</span>
+          </div>
+          <div className="flex justify-between text-sm">
+            <span className="text-gray-500">Account</span>
+            <span className="font-medium">User</span>
+          </div>
+        </div>
 
         {/* Button */}
         <button
-          className="btn bg-green-500 text-white font-semibold hover:bg-blue-500 mt-6"
-          onClick={() => router.push("/my-profile/update")}
+          onClick={() => router.push("/update")}
+          className="mt-6 w-full py-3 rounded-xl bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold shadow-md hover:scale-105 transition-all duration-300"
         >
-          Update Information
+          Update Profile
         </button>
-      </div>
 
-    </>
+      </div>
+    </div>
   );
 }

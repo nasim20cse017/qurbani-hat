@@ -19,7 +19,7 @@ export default function FeaturedAnimals() {
       <div className="card-actions w-1/4 mx-auto mt-8">
          <Link href="/all-animals">
     <Button
-      className="w-[250px] btn bg-green-400 text-black rounded-md px-6 py-3 text-sm sm:text-base font-bold shadow-md hover:scale-105 hover:bg-blue-400 transition"
+      className="w-[250px] btn bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold shadow-md hover:scale-105 transition-all duration-300 rounded-md px-6 py-3 text-sm sm:text-base  hover:bg-blue-400"
     >
       View All Animals
     </Button>
