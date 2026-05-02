@@ -15,10 +15,12 @@ export default function HeroSection() {
           {/* LEFT CONTENT */}
           <div className="w-full lg:w-1/2 text-center lg:text-left space-y-5 sm:space-y-6">
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-green-900">
+            <h1 className="animate__animated animate__bounce animate__infinite animate__slow text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-green-900">
               Find Your Perfect{" "}
               <span className="text-green-700">Qurbani</span> Animal
             </h1>
+            {/* <h1 className="">An animated element</h1> */}
+
 
             <p className="text-gray-600 text-sm sm:text-base md:text-lg max-w-xl mx-auto lg:mx-0">
               Explore healthy cows and goats, book online, and fulfill your

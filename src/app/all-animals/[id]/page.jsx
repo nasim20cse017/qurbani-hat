@@ -1,6 +1,4 @@
 "use client";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import animals from "@/data/animal.json";
 import { useParams } from "next/navigation";
 import { useState } from "react";
@@ -8,6 +6,8 @@ import { toast } from "react-toastify";
 import { useSession } from "@/lib/auth-client";
 
 export default function AnimalDetailsPage() {
+
+  
   const params = useParams();
   const animal = animals.find((a) => a.id === Number(params.id));
   const { data: session } = useSession();
