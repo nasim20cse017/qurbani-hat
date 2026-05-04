@@ -19,7 +19,7 @@ export default function MyProfilePage() {
 
       <div className="backdrop-blur-lg bg-white/60 border border-white/40 shadow-xl rounded-3xl w-full max-w-md p-8 text-center">
 
-        {/* Avatar */}
+        {/* User Photo */}
         <div className="flex justify-center mb-4">
           <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white shadow-md">
             {user.image ? (

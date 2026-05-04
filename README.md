@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🐄 QurbaniHat – Livestock Booking Platform
 
-## Getting Started
+**Live URL:** [https://qurbani-hat-64qj.vercel.app](https://qurbani-hat-64qj.vercel.app)
 
-First, run the development server:
+Your trusted online marketplace for Qurbani livestock. Browse healthy cows and goats, book with ease, and prepare for a blessed sacrifice.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Purpose
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+QurbaniHat simplifies the process of finding and booking Qurbani animals. It is a fully responsive web application where users can:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- View a catalogue of at least 10 animals with details (price, weight, breed, etc.)
+- Sort animals by price
+- Book an animal after signing in (simulated booking)
+- Manage their profile and update their information
+- Enjoy rich UI/UX with animations and toast notifications
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🔐 **Authentication** – Email/password registration & login, plus Google social login (BetterAuth)
+- 🐮 **Animal Catalogue** – JSON‑based list of cows & goats with detailed info and images
+- 🧾 **Booking Form** – Accessible only to authenticated users; shows success toast (no DB write)
+- 👤 **My Profile** – View profile (name, email, photo) and update name & image
+- 🔎 **Sorting** – Sort all animals by price (low‑high / high‑low)
+- 📱 **Fully Responsive** – Works seamlessly on mobile, tablet, and desktop
+- 🎨 **Modern Design** – HeroUI components, Tailwind CSS, custom Lottie animations, and Animate.css
+- 📢 **Toast Notifications** – Using React‑Toastify for success/error feedback
+- 🛣️ **Protected Routes** – Middleware redirects unauthenticated users to login from private pages
+- 📄 **Custom 404 Page** – Animated not‑found page with Lottie
+- 🚀 **Additional Sections** – Qurbani tips, top breeds, extra “Why Choose Us” section
+- 🌐 **Google OAuth 2.0** – Sign in/up with Google in one click
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📦 NPM Packages Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Core
+| Package | Purpose |
+|---------|---------|
+| **next** | React framework for SSR, routing, and API routes |
+| **react** & **react‑dom** | UI library |
+| **better‑auth** | Authentication (email/password + Google OAuth) |
+| **@better-auth/mongo-adapter** | MongoDB adapter for BetterAuth |
+| **mongodb** | MongoDB driver |
+| **tailwindcss** | Utility‑first CSS framework |
+| **@heroui/react** & **@heroui/styles** | Modern UI components (Button, Avatar, Dropdown, etc.) |
+| **react‑icons** | SVG icons (used for social links and more) |
+| **react‑toastify** | Toast notifications |
+| **animate.css** | Ready‑to‑use CSS animations (challenge package) |
+| **react‑hook‑form** | Form state management (used in booking form) |
+| **@gravity‑ui/icons** | Additional icons library |
+| **daisyui** (dev) | Tailwind CSS component library (used for some extra styling) |
+| **eslint** & **eslint‑config‑next** | Code linting |
+| **@tailwindcss/postcss** | PostCSS integration for Tailwind |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+

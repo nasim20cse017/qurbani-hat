@@ -27,7 +27,7 @@ export default function Footer() {
             <ul className="text-sm text-gray-300 space-y-2">
               <li className="hover:text-white transition">📧 info@qurbanihat.com</li>
               <li className="hover:text-white transition">📞 +880 1700-000000</li>
-              <li className="hover:text-white transition">📍 Bogura, Bangladesh</li>
+              <li className="hover:text-white transition">📍 Barishal, Bangladesh</li>
             </ul>
           </div>
 

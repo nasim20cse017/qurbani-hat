@@ -45,7 +45,7 @@ const RegisterPage = () => {
         }
 
         if (response) {
-            toast.success("Sign Up Successful 🎉");
+            toast.success("Sign Up Successful");
 
             // redirect after short delay so user can see toast
             setTimeout(() => {

@@ -1,6 +1,4 @@
 "use client";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";

@@ -15,6 +15,7 @@ export default function HeroSection() {
           {/* LEFT CONTENT */}
           <div className="w-full lg:w-1/2 text-center lg:text-left space-y-5 sm:space-y-6">
             
+            {/* Use Animate.css npm Package */}
             <h1 className="animate__animated animate__bounce animate__infinite animate__slow text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-green-900">
               Find Your Perfect{" "}
               <span className="text-green-700">Qurbani</span> Animal
