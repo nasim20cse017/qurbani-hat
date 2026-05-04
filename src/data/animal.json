@@ -113,7 +113,7 @@
     "age": 2,
     "location": "Rajbari",
     "description": "Brown sheep",
-    "image": "https://images.pexels.com/photos/140089/pexels-photo-140089.jpeg",
+    "image": "https://i.ibb.co.com/1JjSsMLc/brown-sheep.jpg",
     "category": "Small Animal"
   },
   {
@@ -165,7 +165,7 @@
     "age": 2,
     "location": "Dinajpur",
     "description": "Black sheep",
-    "image": "https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg",
+    "image": "https://i.ibb.co.com/ks5TfRs0/black-sheep-standing-black-sheep-stands-alone-white-surface-perfect-use-designs-related-to-uniquenes.webp",
     "category": "Small Animal"
   },
   {
@@ -178,7 +178,7 @@
     "age": 3,
     "location": "Chattogram",
     "description": "Young camel",
-    "image": "https://images.pexels.com/photos/2743344/pexels-photo-2743344.jpeg",
+    "image": "https://i.ibb.co.com/twyMgH91/Young-Camel.jpg",
     "category": "Large Animal"
   },
   {
@@ -191,7 +191,7 @@
     "age": 3,
     "location": "Bogura",
     "description": "Farm cow",
-    "image": "https://images.pexels.com/photos/33550/pexels-photo-33550.jpeg",
+    "image": "https://i.ibb.co.com/nNsLVc2Y/farm-cow.jpg",
     "category": "Large Animal"
   },
   {
@@ -204,7 +204,7 @@
     "age": 2,
     "location": "Noakhali",
     "description": "Hybrid goat",
-    "image": "https://images.pexels.com/photos/124064/pexels-photo-124064.jpeg",
+    "image": "https://i.ibb.co.com/wZxXWmjF/hybrid-goat.jpg",
     "category": "Small Animal"
   },
   {
@@ -217,7 +217,7 @@
     "age": 2,
     "location": "Cumilla",
     "description": "Premium sheep",
-    "image": "https://images.pexels.com/photos/162692/pexels-photo-162692.jpeg",
+    "image": "https://i.ibb.co.com/zht4YNfk/white-sheep-premium.jpg",
     "category": "Small Animal"
   },
   {
@@ -230,7 +230,7 @@
     "age": 5,
     "location": "Dhaka",
     "description": "Heavy camel",
-    "image": "https://images.pexels.com/photos/2674050/pexels-photo-2674050.jpeg",
+    "image": "https://i.ibb.co.com/ymphw5wj/Heavy-Camel.jpg",
     "category": "Large Animal"
   },
   {
@@ -243,7 +243,7 @@
     "age": 4,
     "location": "Comilla",
     "description": "Big cow",
-    "image": "https://images.pexels.com/photos/56832/pexels-photo-56832.jpeg",
+    "image": "https://i.ibb.co.com/8gQwkpbT/Big-Cow.jpg",
     "category": "Large Animal"
   },
   {
@@ -256,137 +256,7 @@
     "age": 1,
     "location": "Barishal",
     "description": "Mini goat",
-    "image": "https://images.pexels.com/photos/35803/pexels-photo-35803.jpeg",
+    "image": "https://i.ibb.co.com/Nnsfhj5d/Mini-Goat.jpg",
     "category": "Small Animal"
-  },
-  {
-    "id": 21,
-    "name": "Spotted Sheep",
-    "type": "Sheep",
-    "breed": "Cross",
-    "price": 22000,
-    "weight": 36,
-    "age": 2,
-    "location": "Pabna",
-    "description": "Spotted sheep",
-    "image": "https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg",
-    "category": "Small Animal"
-  },
-  {
-    "id": 22,
-    "name": "Premium Camel",
-    "type": "Camel",
-    "breed": "Arabian",
-    "price": 350000,
-    "weight": 600,
-    "age": 6,
-    "location": "Dhaka",
-    "description": "Premium camel",
-    "image": "https://images.pexels.com/photos/1380023/pexels-photo-1380023.jpeg",
-    "category": "Large Animal"
-  },
-  {
-    "id": 23,
-    "name": "Grass Cow",
-    "type": "Cow",
-    "breed": "Local",
-    "price": 125000,
-    "weight": 300,
-    "age": 3,
-    "location": "Faridpur",
-    "description": "Grass-fed cow",
-    "image": "https://images.pexels.com/photos/38525/pexels-photo-38525.jpeg",
-    "category": "Large Animal"
-  },
-  {
-    "id": 24,
-    "name": "Healthy Goat",
-    "type": "Goat",
-    "breed": "Deshi",
-    "price": 14500,
-    "weight": 21,
-    "age": 2,
-    "location": "Patuakhali",
-    "description": "Healthy goat",
-    "image": "https://images.pexels.com/photos/313579/pexels-photo-313579.jpeg",
-    "category": "Small Animal"
-  },
-  {
-    "id": 25,
-    "name": "Farm Sheep",
-    "type": "Sheep",
-    "breed": "Farm",
-    "price": 21000,
-    "weight": 35,
-    "age": 2,
-    "location": "Jessore",
-    "description": "Farm sheep",
-    "image": "https://images.pexels.com/photos/247932/pexels-photo-247932.jpeg",
-    "category": "Small Animal"
-  },
-  {
-    "id": 26,
-    "name": "Young Camel 2",
-    "type": "Camel",
-    "breed": "Deshi",
-    "price": 260000,
-    "weight": 430,
-    "age": 3,
-    "location": "Chattogram",
-    "description": "Young camel",
-    "image": "https://images.pexels.com/photos/3582000/pexels-photo-3582000.jpeg",
-    "category": "Large Animal"
-  },
-  {
-    "id": 27,
-    "name": "Premium Cow",
-    "type": "Cow",
-    "breed": "Imported",
-    "price": 180000,
-    "weight": 400,
-    "age": 3,
-    "location": "Dhaka",
-    "description": "Premium cow",
-    "image": "https://images.pexels.com/photos/136123/pexels-photo-136123.jpeg",
-    "category": "Large Animal"
-  },
-  {
-    "id": 28,
-    "name": "Large Goat",
-    "type": "Goat",
-    "breed": "Boer",
-    "price": 23000,
-    "weight": 32,
-    "age": 3,
-    "location": "Sylhet",
-    "description": "Large goat",
-    "image": "https://images.pexels.com/photos/225035/pexels-photo-225035.jpeg",
-    "category": "Small Animal"
-  },
-  {
-    "id": 29,
-    "name": "Brown Sheep",
-    "type": "Sheep",
-    "breed": "Brown",
-    "price": 20000,
-    "weight": 33,
-    "age": 2,
-    "location": "Tangail",
-    "description": "Brown sheep",
-    "image": "https://i.ibb.co.com/mCV8K4w7/Brown-Sheep.jpg",
-    "category": "Small Animal"
-  },
-  {
-    "id": 30,
-    "name": "Camel Group",
-    "type": "Camel",
-    "breed": "Arabian",
-    "price": 400000,
-    "weight": 650,
-    "age": 6,
-    "location": "Dhaka",
-    "description": "Camel for group Qurbani",
-    "image": "https://images.pexels.com/photos/2124788/pexels-photo-2124788.jpeg",
-    "category": "Large Animal"
   }
 ]
